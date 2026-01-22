@@ -1,0 +1,308 @@
+{
+  "stats": {
+    "techStacks": "10+",
+    "communityTopics": "2.5K+",
+    "contributors": "500+"
+  },
+  "features": [
+    {
+      "icon": "👥",
+      "title": "Community Driven",
+      "description": "Learn from topics and questions shared by experienced developers who've already mastered the stack"
+    },
+    {
+      "icon": "👍",
+      "title": "Curated by Votes",
+      "description": "Best topics rise to the top through community voting, ensuring quality learning paths"
+    },
+    {
+      "icon": "📝",
+      "title": "Contribute & Help",
+      "description": "Share your knowledge by suggesting topics and questions to help others learn"
+    },
+    {
+      "icon": "📊",
+      "title": "Track Progress",
+      "description": "Monitor your learning journey and see which topics you've mastered"
+    }
+  ],
+  "domains": [
+    {
+      "id": "mern",
+      "name": "MERN Stack",
+      "description": "MongoDB, Express.js, React, Node.js",
+      "icon": "code",
+      "topicCount": 48,
+      "subdomains": [
+        {
+          "id": "mongodb",
+          "name": "MongoDB",
+          "description": "NoSQL database for modern apps",
+          "topicCount": 12,
+          "contributors": 23
+        },
+        {
+          "id": "expressjs",
+          "name": "Express.js",
+          "description": "Fast, minimalist web framework",
+          "topicCount": 10,
+          "contributors": 19
+        },
+        {
+          "id": "react",
+          "name": "React",
+          "description": "Library for building user interfaces",
+          "topicCount": 15,
+          "contributors": 31
+        },
+        {
+          "id": "nodejs",
+          "name": "Node.js",
+          "description": "JavaScript runtime environment",
+          "topicCount": 11,
+          "contributors": 21
+        }
+      ]
+    },
+    {
+      "id": "flutter",
+      "name": "Flutter",
+      "description": "Cross-platform mobile development",
+      "icon": "mobile",
+      "topicCount": 36,
+      "subdomains": [
+        {
+          "id": "dart",
+          "name": "Dart",
+          "description": "Programming language for Flutter",
+          "topicCount": 8,
+          "contributors": 15
+        },
+        {
+          "id": "widgets",
+          "name": "Widgets",
+          "description": "Building blocks of Flutter UI",
+          "topicCount": 14,
+          "contributors": 22
+        },
+        {
+          "id": "state",
+          "name": "State Management",
+          "description": "Provider, Bloc, Riverpod patterns",
+          "topicCount": 10,
+          "contributors": 18
+        },
+        {
+          "id": "native",
+          "name": "Native Features",
+          "description": "Platform channels and plugins",
+          "topicCount": 4,
+          "contributors": 12
+        }
+      ]
+    },
+    {
+      "id": "django",
+      "name": "Django",
+      "description": "Python web framework",
+      "icon": "globe",
+      "topicCount": 42,
+      "subdomains": [
+        {
+          "id": "python",
+          "name": "Python",
+          "description": "Core Python programming",
+          "topicCount": 10,
+          "contributors": 25
+        },
+        {
+          "id": "models",
+          "name": "Models & ORM",
+          "description": "Database models and queries",
+          "topicCount": 12,
+          "contributors": 20
+        },
+        {
+          "id": "views",
+          "name": "Views & Templates",
+          "description": "Request handling and rendering",
+          "topicCount": 11,
+          "contributors": 18
+        },
+        {
+          "id": "rest",
+          "name": "REST Framework",
+          "description": "Building APIs with DRF",
+          "topicCount": 9,
+          "contributors": 16
+        }
+      ]
+    }
+  ],
+  "topics": {
+    "mongodb": {
+      "name": "MongoDB",
+      "parentDomain": "mern",
+      "parentName": "MERN Stack",
+      "subtitle": "Explore community-curated topics and master your skills",
+      "items": [
+        {
+          "id": "intro-setup",
+          "title": "Introduction and Setup",
+          "description": "Learn how to set up your environment and understand the core architecture.",
+          "difficulty": "Beginner"
+        },
+        {
+          "id": "core-concepts",
+          "title": "Core Concepts",
+          "description": "Deep dive into variables, types, and fundamental programming patterns.",
+          "difficulty": "Beginner"
+        },
+        {
+          "id": "data-structures",
+          "title": "Data Structures",
+          "description": "Master collections, maps, and efficient data handling techniques.",
+          "difficulty": "Intermediate"
+        },
+        {
+          "id": "advanced-patterns",
+          "title": "Advanced Patterns",
+          "description": "Explore architectural patterns and advanced language features.",
+          "difficulty": "Advanced"
+        },
+        {
+          "id": "performance-optimization",
+          "title": "Performance Optimization",
+          "description": "Techniques for building faster, more efficient applications.",
+          "difficulty": "Advanced"
+        },
+        {
+          "id": "best-practices",
+          "title": "Best Practices",
+          "description": "Industry standard coding conventions and community guidelines.",
+          "difficulty": "Intermediate"
+        },
+        {
+          "id": "testing-strategies",
+          "title": "Testing Strategies",
+          "description": "Unit testing, integration testing, and automated quality assurance.",
+          "difficulty": "Intermediate"
+        },
+        {
+          "id": "deployment",
+          "title": "Deployment",
+          "description": "Release management, CI/CD pipelines, and production setup.",
+          "difficulty": "Intermediate"
+        }
+      ]
+    },
+    "expressjs": {
+      "name": "Express.js",
+      "parentDomain": "mern",
+      "parentName": "MERN Stack",
+      "subtitle": "Build robust APIs and web applications",
+      "items": [
+        {
+          "id": "getting-started",
+          "title": "Getting Started",
+          "description": "Install Express and create your first server.",
+          "difficulty": "Beginner"
+        },
+        {
+          "id": "routing",
+          "title": "Routing",
+          "description": "Handle different HTTP methods and URL patterns.",
+          "difficulty": "Beginner"
+        },
+        {
+          "id": "middleware",
+          "title": "Middleware",
+          "description": "Request processing pipeline and custom middleware.",
+          "difficulty": "Intermediate"
+        },
+        {
+          "id": "error-handling",
+          "title": "Error Handling",
+          "description": "Graceful error handling and custom error pages.",
+          "difficulty": "Intermediate"
+        },
+        {
+          "id": "authentication",
+          "title": "Authentication",
+          "description": "JWT, sessions, and OAuth integration.",
+          "difficulty": "Advanced"
+        }
+      ]
+    },
+    "react": {
+      "name": "React",
+      "parentDomain": "mern",
+      "parentName": "MERN Stack",
+      "subtitle": "Build modern user interfaces",
+      "items": [
+        {
+          "id": "jsx-basics",
+          "title": "JSX Basics",
+          "description": "Understanding JSX syntax and expressions.",
+          "difficulty": "Beginner"
+        },
+        {
+          "id": "components",
+          "title": "Components",
+          "description": "Functional and class components.",
+          "difficulty": "Beginner"
+        },
+        {
+          "id": "hooks",
+          "title": "Hooks",
+          "description": "useState, useEffect, and custom hooks.",
+          "difficulty": "Intermediate"
+        },
+        {
+          "id": "context",
+          "title": "Context API",
+          "description": "Global state management with Context.",
+          "difficulty": "Intermediate"
+        },
+        {
+          "id": "performance",
+          "title": "Performance",
+          "description": "Memoization and optimization techniques.",
+          "difficulty": "Advanced"
+        }
+      ]
+    },
+    "nodejs": {
+      "name": "Node.js",
+      "parentDomain": "mern",
+      "parentName": "MERN Stack",
+      "subtitle": "JavaScript runtime environment",
+      "items": [
+        {
+          "id": "fundamentals",
+          "title": "Fundamentals",
+          "description": "Event loop, modules, and core concepts.",
+          "difficulty": "Beginner"
+        },
+        {
+          "id": "file-system",
+          "title": "File System",
+          "description": "Reading, writing, and managing files.",
+          "difficulty": "Beginner"
+        },
+        {
+          "id": "streams",
+          "title": "Streams",
+          "description": "Handling large data with streams.",
+          "difficulty": "Intermediate"
+        },
+        {
+          "id": "security",
+          "title": "Security",
+          "description": "Best practices for secure applications.",
+          "difficulty": "Advanced"
+        }
+      ]
+    }
+  }
+}

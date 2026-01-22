@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Suggest a new topic for <%= subdomainName %>">
+    <title>Suggest a New Topic - BNext Dev</title>
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+    <div class="page-container">
+        <header class="header">
+            <div class="container header-content">
+                <a href="/" class="logo">
+                    <span class="logo-icon">&lt;/&gt;</span>
+                    BNext Dev
+                </a>
+                <div class="user-avatar">👤</div>
+            </div>
+        </header>
+
+        <main class="page-content">
+            <div class="container form-container">
+                <a href="/domains/<%= domainId %>/<%= subdomainId %>" class="back-link">
+                    ← Back to Topics
+                </a>
+
+                <div class="page-header">
+                    <div>
+                        <h1>Suggest a New Topic</h1>
+                        <p>Help the community by suggesting a valuable topic for <%= subdomainName %></p>
+                    </div>
+                </div>
+
+                <div class="info-banner">
+                    <div class="icon">ℹ</div>
+                    <div>
+                        <h4>How Community Contributions Work</h4>
+                        <p>Your suggestion will be reviewed by the community through voting. High-quality, relevant topics will rise to the top and help others in their learning journey!</p>
+                    </div>
+                </div>
+
+                <div class="form-card">
+                    <form action="#" method="POST">
+                        <div class="form-group">
+                            <label class="form-label">
+                                Topic Title <span class="required">*</span>
+                            </label>
+                            <input 
+                                type="text" 
+                                class="form-input" 
+                                placeholder="e.g., Introduction to Components"
+                                required
+                            >
+                            <p class="form-hint">Clear and concise titles work best</p>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">
+                                Description <span class="required">*</span>
+                            </label>
+                            <textarea 
+                                class="form-input" 
+                                rows="4"
+                                placeholder="Explain what this topic covers and why it's important to learn..."
+                                required
+                            ></textarea>
+                            <p class="form-hint">Help learners understand the topic's value</p>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">
+                                Complexity Level <span class="required">*</span>
+                            </label>
+                            <select class="form-select" required>
+                                <option value="">Select complexity</option>
+                                <option value="beginner">Beginner</option>
+                                <option value="intermediate">Intermediate</option>
+                                <option value="advanced">Advanced</option>
+                            </select>
+                        </div>
+
+                        <div class="form-buttons">
+                            <button type="submit" class="btn btn-primary">
+                                Submit Suggestion
+                            </button>
+                            <a href="/domains/<%= domainId %>/<%= subdomainId %>" class="btn btn-cancel">
+                                Cancel
+                            </a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

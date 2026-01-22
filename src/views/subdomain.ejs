@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Choose a subdomain to explore community-curated topics">
+    <title><%= domain.name %> - BNext Dev</title>
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+    <div class="page-container">
+        <header class="header">
+            <div class="container header-content">
+                <a href="/" class="logo">
+                    <span class="logo-icon">&lt;/&gt;</span>
+                    BNext Dev
+                </a>
+                <div class="user-avatar">👤</div>
+            </div>
+        </header>
+
+        <main class="page-content">
+            <div class="container">
+                <a href="/domains" class="back-link">
+                    ← Back to Domains
+                </a>
+
+                <div class="page-header">
+                    <div>
+                        <h1><%= domain.name %></h1>
+                        <p>Choose a subdomain to explore community-curated topics and start learning</p>
+                    </div>
+                </div>
+
+                <div class="subdomain-grid">
+                    <% domain.subdomains.forEach(sub => { %>
+                        <a href="/domains/<%= domain.id %>/<%= sub.id %>" class="subdomain-card">
+                            <div class="subdomain-info">
+                                <h3><%= sub.name %></h3>
+                                <p class="description"><%= sub.description %></p>
+                                <div class="subdomain-stats">
+                                    <span class="topics"><%= sub.topicCount %> topics</span>
+                                    <span class="contributors">👥 <%= sub.contributors %> contributors</span>
+                                </div>
+                            </div>
+                            <span class="subdomain-arrow">›</span>
+                        </a>
+                    <% }); %>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

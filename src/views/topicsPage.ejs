@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="<%= topic.subtitle %>">
+    <title><%= topic.name %> Topics - BNext Dev</title>
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+    <div class="page-container">
+        <header class="header">
+            <div class="container header-content">
+                <a href="/" class="logo">
+                    <span class="logo-icon">&lt;/&gt;</span>
+                    BNext Dev
+                </a>
+                <div class="user-avatar">👤</div>
+            </div>
+        </header>
+
+        <main class="page-content">
+            <div class="container">
+                <a href="/domains/<%= topic.parentDomain %>" class="back-link">
+                    ← Back
+                </a>
+
+                <div class="page-header">
+                    <div>
+                        <h1><%= topic.name %> Topics</h1>
+                        <p><%= topic.subtitle %></p>
+                    </div>
+                    <a href="/domains/<%= topic.parentDomain %>/<%= subdomainId %>/add" class="suggest-btn">
+                        + Suggest Topic
+                    </a>
+                </div>
+
+                <div class="topics-grid">
+                    <% topic.items.forEach(item => { %>
+                        <div class="topic-card">
+                            <div class="topic-card-header">
+                                <h3><%= item.title %></h3>
+                                <span class="difficulty-badge <%= item.difficulty.toLowerCase() %>">
+                                    <%= item.difficulty %>
+                                </span>
+                            </div>
+                            <p class="description"><%= item.description %></p>
+                            <a href="#" class="topic-view-link">
+                                View Topics →
+                            </a>
+                        </div>
+                    <% }); %>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

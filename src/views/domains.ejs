@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Choose your tech stack to begin your learning journey">
+    <title>Choose Your Domain - BNext Dev</title>
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+    <div class="page-container">
+        <header class="header">
+            <div class="container header-content">
+                <a href="/" class="logo">
+                    <span class="logo-icon">&lt;/&gt;</span>
+                    BNext Dev
+                </a>
+                <div class="user-avatar">👤</div>
+            </div>
+        </header>
+
+        <main class="page-content">
+            <div class="container">
+                <div class="page-header">
+                    <div>
+                        <h1>Choose Your Domain</h1>
+                        <p>Select a tech stack to begin your learning journey with community-curated topics</p>
+                    </div>
+                </div>
+
+                <div class="domain-grid">
+                    <% domains.forEach(domain => { %>
+                        <div class="domain-card">
+                            <div class="domain-header">
+                                <div class="domain-icon <%= domain.icon %>">
+                                    <% if (domain.icon === 'code') { %>
+                                        &lt;/&gt;
+                                    <% } else if (domain.icon === 'mobile') { %>
+                                        📱
+                                    <% } else { %>
+                                        🌐
+                                    <% } %>
+                                </div>
+                                <div class="topic-count">
+                                    <div class="count"><%= domain.topicCount %></div>
+                                    <div class="label">topics</div>
+                                </div>
+                            </div>
+                            <h3><%= domain.name %></h3>
+                            <p class="description"><%= domain.description %></p>
+                            <a href="/domains/<%= domain.id %>" class="view-link">
+                                View Roadmap →
+                            </a>
+                        </div>
+                    <% }); %>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

@@ -1,0 +1,141 @@
+{
+  
+  "mern": {
+    "name": "MERN Stack",
+    "subtitle": "Master full-stack development with MongoDB, Express, React, and Node.js",
+    "topics": [
+      {
+        "id": "getting-started",
+        "title": "Getting Started",
+        "description": "Set up your MERN development environment and create your first app.",
+        "difficulty": "Beginner"
+      },
+        {
+        "id": "getting-started",
+        "title": "Getting Started",
+        "description": "Set up your MERN development environment and create your first app.",
+        "difficulty": "Beginner"
+      },
+      {
+        "id": "react-fundamentals",
+        "title": "React Fundamentals",
+        "description": "Learn components, hooks, and state management in React.",
+        "difficulty": "Beginner"
+      },
+      {
+        "id": "express-apis",
+        "title": "Express APIs",
+        "description": "Build RESTful APIs with Express and Node.js.",
+        "difficulty": "Intermediate"
+      },
+      {
+        "id": "mongodb-integration",
+        "title": "MongoDB Integration",
+        "description": "Connect and interact with MongoDB databases.",
+        "difficulty": "Intermediate"
+      },
+      {
+        "id": "authentication",
+        "title": "Authentication & Security",
+        "description": "Implement JWT authentication and secure your applications.",
+        "difficulty": "Advanced"
+      },
+      {
+        "id": "state-management",
+        "title": "State Management",
+        "description": "Redux, Context API, and advanced state patterns.",
+        "difficulty": "Advanced"
+      }
+    ]
+  },
+    "Datascience": {
+    "name": "datascience",
+    "subtitle": "Master full-stack development with MongoDB, Express, React, and Node.js",
+    "topics": [
+      {
+        "id": "getting-started",
+        "title": "Getting Started",
+        "description": "Set up your MERN development environment and create your first app.",
+        "difficulty": "Beginner"
+      },
+        {
+        "id": "getting-started",
+        "title": "Getting Started",
+        "description": "Set up your MERN development environment and create your first app.",
+        "difficulty": "Beginner"
+      },
+      {
+        "id": "react-fundamentals",
+        "title": "React Fundamentals",
+        "description": "Learn components, hooks, and state management in React.",
+        "difficulty": "Beginner"
+      },
+      {
+        "id": "express-apis",
+        "title": "Express APIs",
+        "description": "Build RESTful APIs with Express and Node.js.",
+        "difficulty": "Intermediate"
+      },
+      {
+        "id": "mongodb-integration",
+        "title": "MongoDB Integration",
+        "description": "Connect and interact with MongoDB databases.",
+        "difficulty": "Intermediate"
+      },
+      {
+        "id": "authentication",
+        "title": "Authentication & Security",
+        "description": "Implement JWT authentication and secure your applications.",
+        "difficulty": "Advanced"
+      },
+      {
+        "id": "state-management",
+        "title": "State Management",
+        "description": "Redux, Context API, and advanced state patterns.",
+        "difficulty": "Advanced"
+      }
+    ]
+  },
+  "flutter": {
+    "name": "Flutter",
+    "subtitle": "Build beautiful native mobile apps for iOS and Android",
+    "topics": [
+      {
+        "id": "dart-basics",
+        "title": "Dart Basics",
+        "description": "Learn Dart programming language fundamentals.",
+        "difficulty": "Beginner"
+      },
+      {
+        "id": "widgets",
+        "title": "Widgets & UI",
+        "description": "Master Flutter widgets and create stunning user interfaces.",
+        "difficulty": "Beginner"
+      },
+      {
+        "id": "navigation",
+        "title": "Navigation & Routing",
+        "description": "Implement navigation patterns and deep linking.",
+        "difficulty": "Intermediate"
+      },
+      {
+        "id": "state-management",
+        "title": "State Management",
+        "description": "Provider, Bloc, Riverpod, and other state solutions.",
+        "difficulty": "Intermediate"
+      },
+      {
+        "id": "native-features",
+        "title": "Native Features",
+        "description": "Access device cameras, GPS, sensors, and platform channels.",
+        "difficulty": "Advanced"
+      },
+      {
+        "id": "publishing",
+        "title": "Publishing Apps",
+        "description": "Deploy to App Store and Google Play Store.",
+        "difficulty": "Advanced"
+      }
+    ]
+  }
+}
